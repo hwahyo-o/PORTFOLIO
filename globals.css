@@ -1,14 +1,26 @@
+@charset "UTF-8";
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 * {
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html,
 body {
   margin: 0px;
-  min-height: 100%;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  overflow: hidden;
+  font-family: 'Wanted Sans', 'wanted-sans-variable', 'pretendard', 'Pretendard Variable', 'noto-sans', 'Noto Sans KR', sans-serif;
 }
 
 /* a blue color as a generic focus style */
@@ -21,86 +33,48 @@ a {
   text-decoration: none;
 }
 
-/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Ssurround air OTF-Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
+/* 1. 웹폰트 불러오기 (요청하신 폰트 + 추가 폰트) // start */
+        @import url('https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+        @import url('https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/mona.css');
 
-@font-face {
-  font-family: "Cafe24 Ssurround air OTF-Light";
-  src: local("Cafe24 Ssurround air OTF-Light");
-}
+        @font-face {
+            font-family: 'DearFromsol';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161334@griun-fromsol-rg/griun-fromsol-rg/Griun_Fromsol-Rg.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Gunhamimalmunteuyeot';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2607131613@gfcgunhamitalks/gfcgunhamitalks/GFCGunhamiTalks.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Ridibatang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'BonmyeongjoSourceHanSerif';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+        }
+        /* 추가 눈누 웹폰트 // start */
+        @font-face {
+            font-family: 'DungGeunMo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GmarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* 추가 눈누 웹폰트 // end */
 
-/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Moyamoya-Face", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+/* 1. 웹폰트 불러오기 (요청하신 폰트 + 추가 폰트) // end */
 
-@font-face {
-  font-family: "Cafe24 Moyamoya-Face";
-  src: local("Cafe24 Moyamoya-Face");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "D2Coding-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "D2Coding-Bold";
-  src: local("D2Coding-Bold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Ssurround OTF-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Cafe24 Ssurround OTF-Bold";
-  src: local("Cafe24 Ssurround OTF-Bold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "D2Coding-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "D2Coding-Regular";
-  src: local("D2Coding-Regular");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Gmarket Sans TTF-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Gmarket Sans TTF-Medium";
-  src: local("Gmarket Sans TTF-Medium");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-LightItalic", "weight": "300", "style": "italic", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-LightItalic";
-  src: local("Inter-LightItalic");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-Light";
-  src: local("Inter-Light");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-SemiBold";
-  src: local("Inter-SemiBold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Inter-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Inter-Bold";
-  src: local("Inter-Bold");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "THESaenaraUhreni-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "THESaenaraUhreni-Regular";
-  src: local("THESaenaraUhreni-Regular");
-}
-
-/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Decoshadow-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
-
-@font-face {
-  font-family: "Cafe24 Decoshadow-Regular";
-  src: local("Cafe24 Decoshadow-Regular");
-}

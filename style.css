@@ -1,3 +1,100 @@
+@charset "UTF-8";
+
+/* 로딩 화면 컨테이너 (정중앙 정렬) // start */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+/* 로딩 화면 컨테이너 (정중앙 정렬) // end */
+
+/* 상단 타이틀 영역 // start */
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+/* 상단 타이틀 영역 // end */
+
+/* 하이라이트 연출 // start */
+.highlight-container {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  z-index: 1;
+}
+
+.highlight-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 100%;
+  background-color: #ffc15a; /* 첨부해주신 이미지 톤의 노란/오렌지색 */
+  z-index: -1;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.highlight-container.fill-highlight::before {
+  width: 100%;
+}
+/* 하이라이트 연출 // end */
+
+/* 하단 서브타이틀 영역 // start */
+.subtitle-row {
+  font-family: "Mona Sans", monospace;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+/* 하단 서브타이틀 영역 // end */
+
+/* 메인 콘텐츠 (로딩 후 보여질 페이지) // start */
+#main-content {
+  opacity: 0;
+  visibility: hidden;
+  padding: 50px;
+  transition: opacity 1s ease;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20vh;
+}
+/* 메인 콘텐츠 (로딩 후 보여질 페이지) // end */
+
+/* 트랜지션 클래스 // start */
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+/* 트랜지션 클래스 // end */
+
+
+
+/* // */
 .element-PC-main-home {
   background-color: #ffffff;
   overflow: hidden;
@@ -9,7 +106,7 @@
 
 .element-PC-main-home .footer {
   position: absolute;
-  left: calc(50.00% - 960px);
+  left: calc(50% - 960px);
   bottom: 0;
   width: 1920px;
   height: 24px;
@@ -37,7 +134,7 @@
 .element-PC-main-home .DALLE {
   position: absolute;
   top: 219px;
-  left: calc(50.00% - 938px);
+  left: calc(50% - 938px);
   width: 713px;
   height: 762px;
   aspect-ratio: 1;
@@ -47,7 +144,7 @@
 .element-PC-main-home .rectangle {
   position: absolute;
   top: 227px;
-  left: calc(50.00% + 126px);
+  left: calc(50% + 126px);
   width: 856px;
   height: 612px;
   background-color: #eeeff1;
@@ -56,7 +153,7 @@
 .element-PC-main-home .group {
   position: absolute;
   top: 117px;
-  left: calc(50.00% - 414px);
+  left: calc(50% - 414px);
   width: 901px;
   height: 832px;
 }
@@ -64,13 +161,15 @@
 .element-PC-main-home .rectangle-2 {
   position: absolute;
   top: 144px;
-  left: calc(50.00% - 390px);
+  left: calc(50% - 390px);
   width: 840px;
   height: 688px;
   border-radius: 30px;
-  background: linear-gradient(227deg,
-      rgba(212, 140, 255, 1) 0%,
-      rgba(89, 143, 255, 1) 100%);
+  background: linear-gradient(
+    227deg,
+    rgba(212, 140, 255, 1) 0%,
+    rgba(89, 143, 255, 1) 100%
+  );
 }
 
 .element-PC-main-home .frame {
@@ -83,12 +182,14 @@
   padding: 40px 60px;
   position: absolute;
   top: 144px;
-  left: calc(50.00% - 390px);
+  left: calc(50% - 390px);
   border-radius: 30px;
   box-shadow: 0px 10px 20px #598eff80;
-  background: linear-gradient(227deg,
-      rgba(212, 140, 255, 1) 0%,
-      rgba(89, 143, 255, 1) 100%);
+  background: linear-gradient(
+    227deg,
+    rgba(212, 140, 255, 1) 0%,
+    rgba(89, 143, 255, 1) 100%
+  );
 }
 
 .element-PC-main-home .text-wrapper {
@@ -105,7 +206,7 @@
 .element-PC-main-home .mask-group {
   position: absolute;
   top: 0;
-  left: calc(50.00% - 450px);
+  left: calc(50% - 450px);
   width: 858px;
   height: 614px;
 }
@@ -120,7 +221,7 @@
   padding: 25px 23px;
   position: absolute;
   top: 881px;
-  left: calc(50.00% - 528px);
+  left: calc(50% - 528px);
   background-color: #ffffff;
   border-radius: 100px;
   box-shadow: 0px 3px 10px #598eff80;
@@ -156,7 +257,7 @@
 .element-PC-main-home .img {
   position: absolute;
   top: 678px;
-  left: calc(50.00% + 560px);
+  left: calc(50% + 560px);
   width: 423px;
   height: 271px;
 }
@@ -164,7 +265,7 @@
 .element-PC-main-home .group-2 {
   position: absolute;
   top: 117px;
-  left: calc(50.00% + 560px);
+  left: calc(50% + 560px);
   width: 423px;
   height: 271px;
 }
@@ -172,7 +273,7 @@
 .element-PC-main-home .mask-group-2 {
   position: absolute;
   top: 398px;
-  left: calc(50.00% + 560px);
+  left: calc(50% + 560px);
   width: 423px;
   height: 271px;
 }
@@ -180,7 +281,7 @@
 .element-PC-main-home .element {
   position: absolute;
   top: 319px;
-  left: calc(50.00% - 270px);
+  left: calc(50% - 270px);
   -webkit-text-stroke: 5px #ffffff;
   font-family: "D2Coding-Bold", Helvetica;
   font-weight: 700;
@@ -209,7 +310,7 @@
   padding: 25px 23px;
   position: absolute;
   top: 742px;
-  left: calc(50.00% - 124px);
+  left: calc(50% - 124px);
   background-color: #ffffff;
   border-radius: 100px;
   box-shadow: 0px 3px 10px #598eff80;
@@ -218,7 +319,7 @@
 .element-PC-main-home .frame-wrapper {
   position: absolute;
   top: 116px;
-  left: calc(50.00% - 962px);
+  left: calc(50% - 962px);
   width: 1920px;
   height: 606px;
   display: flex;
@@ -317,7 +418,7 @@
 .element-PC-main-home .p {
   position: absolute;
   top: 394px;
-  left: calc(50.00% - 495px);
+  left: calc(50% - 495px);
   -webkit-text-stroke: 5px #ffffff;
   font-family: "D2Coding-Bold", Helvetica;
   font-weight: 700;
@@ -340,7 +441,7 @@
 .element-PC-main-home .rectangle-3 {
   position: absolute;
   top: 8px;
-  left: calc(50.00% - 290px);
+  left: calc(50% - 290px);
   width: 1191px;
   height: 1483px;
   background-color: #f4f4f6;
@@ -351,7 +452,7 @@
 .element-PC-main-home .rectangle-4 {
   position: absolute;
   top: 1031px;
-  left: calc(50.00% - 209px);
+  left: calc(50% - 209px);
   width: 1110px;
   height: 380px;
   background-color: #ffffff;
@@ -361,7 +462,7 @@
 .element-PC-main-home .group-6 {
   position: absolute;
   top: 78px;
-  left: calc(50.00% - 213px);
+  left: calc(50% - 213px);
   width: 667px;
   height: 667px;
 }
@@ -369,7 +470,7 @@
 .element-PC-main-home .text-wrapper-7 {
   position: absolute;
   top: -1px;
-  left: calc(50.00% - 636px);
+  left: calc(50% - 636px);
   font-family: "Cafe24 Moyamoya-Face", Helvetica;
   font-weight: 400;
   color: #000000;
@@ -381,7 +482,7 @@
 .element-PC-main-home .my-skill-me {
   position: absolute;
   top: 98px;
-  left: calc(50.00% - 646px);
+  left: calc(50% - 646px);
   font-family: "D2Coding-Regular", Helvetica;
   font-weight: 400;
   color: #000000;
@@ -403,7 +504,7 @@
 .element-PC-main-home .view {
   position: absolute;
   top: 0;
-  left: calc(50.00% - 302px);
+  left: calc(50% - 302px);
   width: 607px;
   height: 177px;
 }
@@ -411,7 +512,7 @@
 .element-PC-main-home .rectangle-5 {
   position: absolute;
   top: 0;
-  left: calc(50.00% - 304px);
+  left: calc(50% - 304px);
   width: 605px;
   height: 177px;
   background-color: #eef6fe;
@@ -422,7 +523,7 @@
 .element-PC-main-home .LOREMLOREM {
   position: absolute;
   top: 47px;
-  left: calc(50.00% - 206px);
+  left: calc(50% - 206px);
   font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
   font-weight: 300;
   color: #000000;
@@ -435,7 +536,7 @@
 .element-PC-main-home .group-7 {
   position: absolute;
   top: 237px;
-  left: calc(50.00% - 248px);
+  left: calc(50% - 248px);
   width: 522px;
   height: 117px;
 }
@@ -443,7 +544,7 @@
 .element-PC-main-home .LOREMLOREM-2 {
   position: absolute;
   top: 17px;
-  left: calc(50.00% - 261px);
+  left: calc(50% - 261px);
   font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
   font-weight: 300;
   color: #000000;
@@ -466,7 +567,7 @@
 .element-PC-main-home .group-8 {
   position: absolute;
   top: 444px;
-  left: calc(50.00% - 248px);
+  left: calc(50% - 248px);
   width: 522px;
   height: 117px;
 }
@@ -474,7 +575,7 @@
 .element-PC-main-home .group-9 {
   position: absolute;
   top: 651px;
-  left: calc(50.00% - 248px);
+  left: calc(50% - 248px);
   width: 522px;
   height: 120px;
 }
@@ -482,7 +583,7 @@
 .element-PC-main-home .LOREMLOREM-3 {
   position: absolute;
   top: 18px;
-  left: calc(50.00% - 261px);
+  left: calc(50% - 261px);
   font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
   font-weight: 300;
   color: #000000;
@@ -505,7 +606,7 @@
 .element-PC-main-home .group-10 {
   position: absolute;
   top: 861px;
-  left: calc(50.00% - 248px);
+  left: calc(50% - 248px);
   width: 522px;
   height: 117px;
 }
@@ -513,7 +614,7 @@
 .element-PC-main-home .group-11 {
   position: absolute;
   top: 1068px;
-  left: calc(50.00% - 248px);
+  left: calc(50% - 248px);
   width: 522px;
   height: 120px;
 }
@@ -533,15 +634,17 @@
   left: -53px;
   width: 696px;
   height: 285px;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 1) 89%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 89%
+  );
 }
 
 .element-PC-main-home .text-wrapper-8 {
   position: absolute;
   top: 296px;
-  left: calc(50.00% - 855px);
+  left: calc(50% - 855px);
   -webkit-text-stroke: 5px #ffffff;
   font-family: "D2Coding-Bold", Helvetica;
   font-weight: 700;
@@ -565,7 +668,7 @@
 .element-PC-main-home .text-wrapper-9 {
   position: absolute;
   top: 295px;
-  left: calc(50.00% - 490px);
+  left: calc(50% - 490px);
   -webkit-text-stroke: 5px #ffffff;
   font-family: "D2Coding-Bold", Helvetica;
   font-weight: 700;
@@ -582,7 +685,7 @@
   gap: 38px;
   position: absolute;
   top: 1131px;
-  left: calc(50.00% - 139px);
+  left: calc(50% - 139px);
 }
 
 .element-PC-main-home .img-2 {
@@ -600,7 +703,7 @@
 .element-PC-main-home .text-wrapper-10 {
   position: absolute;
   top: 1071px;
-  left: calc(50.00% - 139px);
+  left: calc(50% - 139px);
   font-family: "Cafe24 Ssurround OTF-Bold", Helvetica;
   font-weight: 700;
   color: #000000;
@@ -612,7 +715,7 @@
 .element-PC-main-home .group-12 {
   position: absolute;
   top: 5049px;
-  left: calc(50.00% - 960px);
+  left: calc(50% - 960px);
   width: 1920px;
   height: 279px;
 }
@@ -620,7 +723,7 @@
 .element-PC-main-home .banner {
   position: absolute;
   top: 100px;
-  left: calc(50.00% - 960px);
+  left: calc(50% - 960px);
   width: 1924px;
   height: 950px;
 }
@@ -628,7 +731,7 @@
 .element-PC-main-home .banner-bg {
   position: absolute;
   top: 0;
-  left: calc(50.00% - 962px);
+  left: calc(50% - 962px);
   width: 1920px;
   height: 950px;
   background-color: #f4efd280;
@@ -637,7 +740,7 @@
 .element-PC-main-home .group-13 {
   position: absolute;
   top: 63px;
-  left: calc(50.00% - 962px);
+  left: calc(50% - 962px);
   width: 1920px;
   height: 855px;
 }
@@ -645,7 +748,7 @@
 .element-PC-main-home .component {
   position: absolute;
   top: 0;
-  left: calc(50.00% - 960px);
+  left: calc(50% - 960px);
   width: 1920px;
   height: 855px;
   display: flex;
@@ -668,7 +771,7 @@
 .element-PC-main-home .image-5 {
   position: absolute;
   top: 580px;
-  left: calc(50.00% - 398px);
+  left: calc(50% - 398px);
   width: 839px;
   height: 275px;
 }
@@ -684,7 +787,7 @@
 .element-PC-main-home .view-3 {
   position: absolute;
   top: 539px;
-  left: calc(50.00% - 115px);
+  left: calc(50% - 115px);
   width: 230px;
   height: 95px;
 }
@@ -727,7 +830,7 @@
 .element-PC-main-home .text-wrapper-11 {
   position: absolute;
   top: 35px;
-  left: calc(50.00% - 129px);
+  left: calc(50% - 129px);
   font-family: "Gmarket Sans TTF-Medium", Helvetica;
   font-weight: 500;
   color: #000000;
@@ -740,7 +843,7 @@
 .element-PC-main-home .text-wrapper-12 {
   position: absolute;
   top: 392px;
-  left: calc(50.00% - 471px);
+  left: calc(50% - 471px);
   -webkit-text-stroke: 5px #ffffff;
   font-family: "D2Coding-Bold", Helvetica;
   font-weight: 700;
@@ -755,7 +858,7 @@
 .element-PC-main-home .header {
   position: absolute;
   top: 0;
-  left: calc(50.00% - 960px);
+  left: calc(50% - 960px);
   width: 1920px;
   height: 100px;
 }
@@ -1035,7 +1138,7 @@
 
 .element-PC-main-home .group-15 {
   position: absolute;
-  left: calc(50.00% + 605px);
+  left: calc(50% + 605px);
   bottom: 183px;
   width: 120px;
   height: 140px;
@@ -1079,7 +1182,7 @@
 .element-PC-main-home .vector {
   position: absolute;
   width: 83.33%;
-  top: calc(50.00% - 31px);
+  top: calc(50% - 31px);
   left: 16.67%;
   height: 60px;
   transform: rotate(90deg);
