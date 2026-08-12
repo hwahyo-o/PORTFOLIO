@@ -1,0 +1,1136 @@
+.element-PC-main-home {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1920px;
+  min-height: 5348px;
+  position: relative;
+}
+
+.element-PC-main-home .footer {
+  position: absolute;
+  left: calc(50.00% - 960px);
+  bottom: 0;
+  width: 1920px;
+  height: 24px;
+  aspect-ratio: 6.17;
+}
+
+.element-PC-main-home .con {
+  position: absolute;
+  width: 2006px;
+  height: 3794px;
+  top: 1290px;
+  left: -49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.element-PC-main-home .div {
+  margin-left: -33px;
+  height: 981px;
+  width: 1973px;
+  position: relative;
+}
+
+.element-PC-main-home .DALLE {
+  position: absolute;
+  top: 219px;
+  left: calc(50.00% - 938px);
+  width: 713px;
+  height: 762px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.element-PC-main-home .rectangle {
+  position: absolute;
+  top: 227px;
+  left: calc(50.00% + 126px);
+  width: 856px;
+  height: 612px;
+  background-color: #eeeff1;
+}
+
+.element-PC-main-home .group {
+  position: absolute;
+  top: 117px;
+  left: calc(50.00% - 414px);
+  width: 901px;
+  height: 832px;
+}
+
+.element-PC-main-home .rectangle-2 {
+  position: absolute;
+  top: 144px;
+  left: calc(50.00% - 390px);
+  width: 840px;
+  height: 688px;
+  border-radius: 30px;
+  background: linear-gradient(227deg,
+      rgba(212, 140, 255, 1) 0%,
+      rgba(89, 143, 255, 1) 100%);
+}
+
+.element-PC-main-home .frame {
+  display: flex;
+  width: 840px;
+  height: 688px;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 60px;
+  position: absolute;
+  top: 144px;
+  left: calc(50.00% - 390px);
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px #598eff80;
+  background: linear-gradient(227deg,
+      rgba(212, 140, 255, 1) 0%,
+      rgba(89, 143, 255, 1) 100%);
+}
+
+.element-PC-main-home .text-wrapper {
+  position: relative;
+  flex: 1;
+  font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .mask-group {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 450px);
+  width: 858px;
+  height: 614px;
+}
+
+.element-PC-main-home .div-wrapper {
+  display: flex;
+  width: 244px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 25px 23px;
+  position: absolute;
+  top: 881px;
+  left: calc(50.00% - 528px);
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0px 3px 10px #598eff80;
+}
+
+.element-PC-main-home .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  margin-left: -0.5px;
+  -webkit-text-stroke: 1px #598eff;
+  font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
+  font-weight: 300;
+  color: #598eff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-3 {
+  position: absolute;
+  top: -11px;
+  left: 425px;
+  -webkit-text-stroke: 10px #ffffff;
+  font-family: "Cafe24 Moyamoya-Face", Helvetica;
+  font-weight: 400;
+  color: #222222;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .img {
+  position: absolute;
+  top: 678px;
+  left: calc(50.00% + 560px);
+  width: 423px;
+  height: 271px;
+}
+
+.element-PC-main-home .group-2 {
+  position: absolute;
+  top: 117px;
+  left: calc(50.00% + 560px);
+  width: 423px;
+  height: 271px;
+}
+
+.element-PC-main-home .mask-group-2 {
+  position: absolute;
+  top: 398px;
+  left: calc(50.00% + 560px);
+  width: 423px;
+  height: 271px;
+}
+
+.element-PC-main-home .element {
+  position: absolute;
+  top: 319px;
+  left: calc(50.00% - 270px);
+  -webkit-text-stroke: 5px #ffffff;
+  font-family: "D2Coding-Bold", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .con-2 {
+  margin-left: 16px;
+  height: 842px;
+  width: 1924px;
+  position: relative;
+  margin-top: 238px;
+}
+
+.element-PC-main-home .frame-2 {
+  display: flex;
+  width: 244px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 25px 23px;
+  position: absolute;
+  top: 742px;
+  left: calc(50.00% - 124px);
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0px 3px 10px #598eff80;
+}
+
+.element-PC-main-home .frame-wrapper {
+  position: absolute;
+  top: 116px;
+  left: calc(50.00% - 962px);
+  width: 1920px;
+  height: 606px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.element-PC-main-home .frame-3 {
+  display: flex;
+  width: 2500px;
+  height: 606px;
+  position: relative;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0px;
+  background-color: #ebeff2;
+}
+
+.element-PC-main-home .frame-4 {
+  display: flex;
+  flex-direction: column;
+  width: 587.5px;
+  height: 506px;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.element-PC-main-home .group-3 {
+  position: relative;
+  width: 267.5px;
+  height: 302px;
+}
+
+.element-PC-main-home .frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.element-PC-main-home .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Cafe24 Ssurround OTF-Bold", Helvetica;
+  font-weight: 700;
+  color: #598eff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .group-4 {
+  position: relative;
+  width: 527.5px;
+  height: 302px;
+}
+
+.element-PC-main-home .group-5 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 302px;
+}
+
+.element-PC-main-home .text-wrapper-6 {
+  position: absolute;
+  top: -1px;
+  left: 386px;
+  font-family: "Cafe24 Moyamoya-Face", Helvetica;
+  font-weight: 400;
+  color: #222222;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .p {
+  position: absolute;
+  top: 394px;
+  left: calc(50.00% - 495px);
+  -webkit-text-stroke: 5px #ffffff;
+  font-family: "D2Coding-Bold", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  white-space: nowrap;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .con-3 {
+  margin-left: 136px;
+  height: 1491px;
+  width: 1890px;
+  position: relative;
+  margin-top: 242px;
+}
+
+.element-PC-main-home .rectangle-3 {
+  position: absolute;
+  top: 8px;
+  left: calc(50.00% - 290px);
+  width: 1191px;
+  height: 1483px;
+  background-color: #f4f4f6;
+  border-radius: 130px 0px 0px 130px;
+  opacity: 0.63;
+}
+
+.element-PC-main-home .rectangle-4 {
+  position: absolute;
+  top: 1031px;
+  left: calc(50.00% - 209px);
+  width: 1110px;
+  height: 380px;
+  background-color: #ffffff;
+  border-radius: 80px;
+}
+
+.element-PC-main-home .group-6 {
+  position: absolute;
+  top: 78px;
+  left: calc(50.00% - 213px);
+  width: 667px;
+  height: 667px;
+}
+
+.element-PC-main-home .text-wrapper-7 {
+  position: absolute;
+  top: -1px;
+  left: calc(50.00% - 636px);
+  font-family: "Cafe24 Moyamoya-Face", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .my-skill-me {
+  position: absolute;
+  top: 98px;
+  left: calc(50.00% - 646px);
+  font-family: "D2Coding-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element-PC-main-home .frame-6 {
+  position: absolute;
+  top: 245px;
+  left: 0;
+  width: 605px;
+  height: 1188px;
+  overflow: hidden;
+}
+
+.element-PC-main-home .view {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 302px);
+  width: 607px;
+  height: 177px;
+}
+
+.element-PC-main-home .rectangle-5 {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 304px);
+  width: 605px;
+  height: 177px;
+  background-color: #eef6fe;
+  border-radius: 30px;
+  opacity: 0.63;
+}
+
+.element-PC-main-home .LOREMLOREM {
+  position: absolute;
+  top: 47px;
+  left: calc(50.00% - 206px);
+  font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: -1.6px;
+  line-height: normal;
+}
+
+.element-PC-main-home .group-7 {
+  position: absolute;
+  top: 237px;
+  left: calc(50.00% - 248px);
+  width: 522px;
+  height: 117px;
+}
+
+.element-PC-main-home .LOREMLOREM-2 {
+  position: absolute;
+  top: 17px;
+  left: calc(50.00% - 261px);
+  font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: -1.6px;
+  line-height: normal;
+}
+
+.element-PC-main-home .image {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 120px;
+  height: 117px;
+  aspect-ratio: 1.03;
+  object-fit: cover;
+}
+
+.element-PC-main-home .group-8 {
+  position: absolute;
+  top: 444px;
+  left: calc(50.00% - 248px);
+  width: 522px;
+  height: 117px;
+}
+
+.element-PC-main-home .group-9 {
+  position: absolute;
+  top: 651px;
+  left: calc(50.00% - 248px);
+  width: 522px;
+  height: 120px;
+}
+
+.element-PC-main-home .LOREMLOREM-3 {
+  position: absolute;
+  top: 18px;
+  left: calc(50.00% - 261px);
+  font-family: "Cafe24 Ssurround air OTF-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: -1.6px;
+  line-height: normal;
+}
+
+.element-PC-main-home .image-2 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 120px;
+  height: 120px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.element-PC-main-home .group-10 {
+  position: absolute;
+  top: 861px;
+  left: calc(50.00% - 248px);
+  width: 522px;
+  height: 117px;
+}
+
+.element-PC-main-home .group-11 {
+  position: absolute;
+  top: 1068px;
+  left: calc(50.00% - 248px);
+  width: 522px;
+  height: 120px;
+}
+
+.element-PC-main-home .image-3 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 120px;
+  height: 120px;
+  aspect-ratio: 1;
+}
+
+.element-PC-main-home .rectangle-6 {
+  position: absolute;
+  top: 978px;
+  left: -53px;
+  width: 696px;
+  height: 285px;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 89%);
+}
+
+.element-PC-main-home .text-wrapper-8 {
+  position: absolute;
+  top: 296px;
+  left: calc(50.00% - 855px);
+  -webkit-text-stroke: 5px #ffffff;
+  font-family: "D2Coding-Bold", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .image-4 {
+  position: absolute;
+  top: 275px;
+  left: 455px;
+  width: 120px;
+  height: 117px;
+  aspect-ratio: 1.03;
+  object-fit: cover;
+}
+
+.element-PC-main-home .text-wrapper-9 {
+  position: absolute;
+  top: 295px;
+  left: calc(50.00% - 490px);
+  -webkit-text-stroke: 5px #ffffff;
+  font-family: "D2Coding-Bold", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .frame-7 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 38px;
+  position: absolute;
+  top: 1131px;
+  left: calc(50.00% - 139px);
+}
+
+.element-PC-main-home .img-2 {
+  position: relative;
+  width: 240px;
+  height: 240px;
+}
+
+.element-PC-main-home .mask-group-3 {
+  position: relative;
+  width: 203px;
+  height: 240px;
+}
+
+.element-PC-main-home .text-wrapper-10 {
+  position: absolute;
+  top: 1071px;
+  left: calc(50.00% - 139px);
+  font-family: "Cafe24 Ssurround OTF-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.element-PC-main-home .group-12 {
+  position: absolute;
+  top: 5049px;
+  left: calc(50.00% - 960px);
+  width: 1920px;
+  height: 279px;
+}
+
+.element-PC-main-home .banner {
+  position: absolute;
+  top: 100px;
+  left: calc(50.00% - 960px);
+  width: 1924px;
+  height: 950px;
+}
+
+.element-PC-main-home .banner-bg {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 962px);
+  width: 1920px;
+  height: 950px;
+  background-color: #f4efd280;
+}
+
+.element-PC-main-home .group-13 {
+  position: absolute;
+  top: 63px;
+  left: calc(50.00% - 962px);
+  width: 1920px;
+  height: 855px;
+}
+
+.element-PC-main-home .component {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 960px);
+  width: 1920px;
+  height: 855px;
+  display: flex;
+}
+
+.element-PC-main-home .group-14 {
+  margin-top: 19px;
+  width: 1920px;
+  height: 667px;
+}
+
+.element-PC-main-home .view-2 {
+  position: absolute;
+  width: 57.45%;
+  height: 100%;
+  top: 0;
+  left: 21.25%;
+}
+
+.element-PC-main-home .image-5 {
+  position: absolute;
+  top: 580px;
+  left: calc(50.00% - 398px);
+  width: 839px;
+  height: 275px;
+}
+
+.element-PC-main-home .image-6 {
+  position: absolute;
+  width: 1110px;
+  height: 714px;
+  top: 0;
+  left: 0;
+}
+
+.element-PC-main-home .view-3 {
+  position: absolute;
+  top: 539px;
+  left: calc(50.00% - 115px);
+  width: 230px;
+  height: 95px;
+}
+
+.element-PC-main-home .view-4 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 15.79%;
+  top: 84.21%;
+  left: 0;
+}
+
+.element-PC-main-home .ellipse {
+  position: relative;
+  width: 30px;
+  height: 10px;
+  background-color: #333333;
+  border-radius: 15px / 5px;
+}
+
+.element-PC-main-home .ellipse-2 {
+  position: relative;
+  width: 70px;
+  height: 15px;
+  background-color: #333333;
+  border-radius: 35px / 7.5px;
+}
+
+.element-PC-main-home .image-7 {
+  position: absolute;
+  width: 62.17%;
+  height: 100%;
+  top: 0;
+  left: 37.83%;
+}
+
+.element-PC-main-home .text-wrapper-11 {
+  position: absolute;
+  top: 35px;
+  left: calc(50.00% - 129px);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.element-PC-main-home .text-wrapper-12 {
+  position: absolute;
+  top: 392px;
+  left: calc(50.00% - 471px);
+  -webkit-text-stroke: 5px #ffffff;
+  font-family: "D2Coding-Bold", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  white-space: nowrap;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .header {
+  position: absolute;
+  top: 0;
+  left: calc(50.00% - 960px);
+  width: 1920px;
+  height: 100px;
+}
+
+.element-PC-main-home .text-wrapper-13 {
+  position: absolute;
+  top: 3691px;
+  left: 864px;
+  font-family: "Inter-LightItalic", Helvetica;
+  font-weight: 300;
+  font-style: italic;
+  color: #000000;
+  font-size: 150px;
+  letter-spacing: -4.5px;
+  line-height: normal;
+}
+
+.element-PC-main-home .frame-8 {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-rows: repeat(2, fit-content(100%));
+  width: 441px;
+  height: 82px;
+  gap: 4px 30px;
+  position: absolute;
+  top: 3933px;
+  left: 864px;
+}
+
+.element-PC-main-home .text-wrapper-14 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 58px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-15 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 320px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-16 {
+  position: relative;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  width: 91px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-17 {
+  position: relative;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  width: 224px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.element-PC-main-home .frame-9 {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-rows: repeat(2, fit-content(100%));
+  width: 817px;
+  height: 141px;
+  gap: 24px;
+  position: absolute;
+  top: 4115px;
+  left: 864px;
+}
+
+.element-PC-main-home .text-wrapper-18 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 167px;
+  height: 39px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .element-2 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 569px;
+  height: 78px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-19 {
+  position: relative;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  width: 168px;
+  height: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-20 {
+  position: relative;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  width: 625px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .frame-10 {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  grid-template-rows: repeat(4, fit-content(100%));
+  width: 780px;
+  height: 192px;
+  gap: 12px 24px;
+  position: absolute;
+  top: 4336px;
+  left: 864px;
+}
+
+.element-PC-main-home .text-wrapper-21 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  width: 230px;
+  height: 39px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-22 {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 384px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-23 {
+  position: relative;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  width: 258px;
+  height: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-24 {
+  position: relative;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  width: 384px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-25 {
+  position: relative;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  width: 201px;
+  height: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-26 {
+  position: relative;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  width: 413px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-27 {
+  position: relative;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+  width: 343px;
+  height: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .text-wrapper-28 {
+  position: relative;
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  width: 413px;
+  height: 39px;
+  font-family: "Inter-Light", Helvetica;
+  font-weight: 300;
+  letter-spacing: -0.96px;
+  color: #000000;
+  font-size: 32px;
+  line-height: normal;
+}
+
+.element-PC-main-home .group-15 {
+  position: absolute;
+  left: calc(50.00% + 605px);
+  bottom: 183px;
+  width: 120px;
+  height: 140px;
+  display: flex;
+  background-image: url(./img/button.png);
+  background-size: 100% 100%;
+}
+
+.element-PC-main-home .frame-11 {
+  display: inline-flex;
+  margin-top: 10px;
+  width: 58px;
+  height: 120px;
+  margin-left: 31px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.element-PC-main-home .view-5 {
+  position: relative;
+  width: 80px;
+  height: 58px;
+  margin-left: -11px;
+  margin-right: -11px;
+  transform: rotate(-90deg);
+}
+
+.element-PC-main-home .ellipse-3 {
+  position: absolute;
+  width: 72.92%;
+  top: 0;
+  left: 27.08%;
+  height: 58px;
+  background-color: #000000;
+  border-radius: 29.17px;
+  aspect-ratio: 1;
+}
+
+.element-PC-main-home .vector {
+  position: absolute;
+  width: 83.33%;
+  top: calc(50.00% - 31px);
+  left: 16.67%;
+  height: 60px;
+  transform: rotate(90deg);
+  aspect-ratio: 1.8;
+}
+
+.element-PC-main-home .frame-12 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.element-PC-main-home .TITLE-MENU {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "THESaenaraUhreni-Regular", Helvetica;
+  font-weight: 400;
+  color: #2d301a;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* Inject after the original style.css rules. */
+
+.element-PC-main-home a {
+  color: inherit;
+}
+
+.element-PC-main-home .div-wrapper,
+.element-PC-main-home .frame-2,
+.element-PC-main-home .group-15 {
+  text-decoration: none;
+}
+
+.element-PC-main-home .div-wrapper:focus-visible,
+.element-PC-main-home .frame-2:focus-visible,
+.element-PC-main-home .group-15:focus-visible,
+.element-PC-main-home .text-wrapper-15:focus-visible,
+.element-PC-main-home .text-wrapper-17:focus-visible {
+  outline: 3px solid #4a90e2;
+  outline-offset: 4px;
+}
+
+.element-PC-main-home .text-wrapper-15,
+.element-PC-main-home .text-wrapper-17 {
+  text-decoration: none;
+}

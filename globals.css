@@ -1,0 +1,106 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Ssurround air OTF-Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Cafe24 Ssurround air OTF-Light";
+  src: local("Cafe24 Ssurround air OTF-Light");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Moyamoya-Face", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Cafe24 Moyamoya-Face";
+  src: local("Cafe24 Moyamoya-Face");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "D2Coding-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "D2Coding-Bold";
+  src: local("D2Coding-Bold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Ssurround OTF-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Cafe24 Ssurround OTF-Bold";
+  src: local("Cafe24 Ssurround OTF-Bold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "D2Coding-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "D2Coding-Regular";
+  src: local("D2Coding-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Gmarket Sans TTF-Medium", "weight": "500", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Gmarket Sans TTF-Medium";
+  src: local("Gmarket Sans TTF-Medium");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-LightItalic", "weight": "300", "style": "italic", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-LightItalic";
+  src: local("Inter-LightItalic");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-Light", "weight": "300", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-Light";
+  src: local("Inter-Light");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-SemiBold", "weight": "600", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: local("Inter-SemiBold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Inter-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "THESaenaraUhreni-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "THESaenaraUhreni-Regular";
+  src: local("THESaenaraUhreni-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Cafe24 Decoshadow-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+  font-family: "Cafe24 Decoshadow-Regular";
+  src: local("Cafe24 Decoshadow-Regular");
+}
