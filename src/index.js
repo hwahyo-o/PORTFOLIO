@@ -17,9 +17,9 @@ const state = {
 };
 
 // 2. 컨트롤 할 대상 글자 요소들 지정 및 지정한 대상끼리 서로 다른 글꼴 적용되게 만들기
-// const target1 = document.getElementById('portfolio-word'); // 하이라이트 내 단어
-// const target2 = document.getElementById('year-word');      // 추가 지정 단어
-// 아래거는 지정한 대상끼리 같은 글꼴로 랜덤 적용되게 / 두 타겟 단어를 배열 형식을 통해 일괄 선택 처리
+// const target1 = document.getElementById('portfolio-word'); 하이라이트 내 단어
+// const target2 = document.getElementById('year-word');      추가 지정 단어
+// 아래거는 지정한 대상끼리 같은 글꼴로 랜덤 적용되게, 두 타겟 단어를 배열 형식을 통해 일괄 선택 처리
 const shuffleTargets = ['portfolio-word', 'year-word'].map(id => document.getElementById(id));
 
 const loadingWrap = document.querySelector('.loading-wrap'); // 1번: 로딩박스 전체 최외곽 div
