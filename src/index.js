@@ -21,7 +21,6 @@ const state = {
 // const target2 = document.getElementById('year-word');      추가 지정 단어
 // 아래거는 지정한 대상끼리 같은 글꼴로 랜덤 적용되게, 두 타겟 단어를 배열 형식을 통해 일괄 선택 처리
 const shuffleTargets = ['portfolio-word', 'year-word'].map(id => document.getElementById(id));
-
 const loadingWrap = document.querySelector('.loading-wrap'); // 1번: 로딩박스 전체 최외곽 div
 const mainContent = document.getElementById('main-content');
 
@@ -34,7 +33,7 @@ function changeRandomFonts() {
       const randomIndex = Math.floor(Math.random() * fonts.length);
       
       // [수정] style.setProperty를 사용해 !important를 붙여서 기존 CSS 규칙을 강제로 덮어씁니다.
-      element.style.setProperty('font-family', fonts[randomIndex], 'important');
+      element.style.setProperty('font-family', fonts[0], 'important');
     }
   });
 }
@@ -48,10 +47,10 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// 3번: 하이라이트 완료 시점(0.6초 = 600ms 후)에 폰트 셔플 작동
+// 3번: 하이라이트 완료 시점(0.5초 = 500ms 후)에 폰트 셔플 작동
 setTimeout(() => {
-  shuffleInterval = setInterval(changeRandomFonts, 800); // 300ms 간격 무작위 셔플
-}, 600);
+  shuffleInterval = setInterval(changeRandomFonts, 900); // 900ms 간격 무작위 셔플
+}, 500);
 
 // ========================================================
 // 4번: 처음 사이트에 접속한 순간을 기점으로 총 3초 뒤 화면 전환
