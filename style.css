@@ -1,6 +1,20 @@
 @charset "UTF-8";
 
 /* 로딩 화면 컨테이너 (정중앙 정렬) // start */
+.loading-wrap {
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.loading-wrap.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
 #loader {
   position: fixed;
   top: 0;
