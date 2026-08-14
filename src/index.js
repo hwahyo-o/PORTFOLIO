@@ -4,9 +4,9 @@
 // 1-1. 폰트 리스트 및 순서 지정
 const fonts = [
   'Wanted Sans',
+  'Gunhamimalmunteuyeot',
   'Mona',
   'DearFromsol',
-  'Gunhamimalmunteuyeot',
   'Ridibatang',
   'BonmyeongjoSourceHanSerif',
   'Arial',
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // 3번: 하이라이트 완료 시점(0.5초 = 500ms 후)에 폰트 셔플 작동
 setTimeout(() => {
-  shuffleInterval = setInterval(changeRandomFonts, 900); // 900ms 간격 무작위 셔플
+  shuffleInterval = setInterval(changeRandomFonts, 800); // 800ms 간격 무작위 셔플
 }, 500);
 
 // ========================================================
