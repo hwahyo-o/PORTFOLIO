@@ -1,89 +1,139 @@
 @charset "UTF-8";
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/*
+  Wanted Sans Variable은 index.html에서 공식 CDN stylesheet로 먼저 로드합니다.
+  나머지 셔플용 폰트는 외부 WOFF/WOFF2 파일을 직접 @font-face로 등록합니다.
+  저장소에 fonts 폴더를 만들 필요가 없습니다.
+*/
 
 /* 1. 웹폰트 불러오기 (요청하신 폰트 + 추가 폰트) // start */
-@import url("https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
-@import url("https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/mona.css");
-
 @font-face {
   font-family: "DearFromsol";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/2607161334@griun-fromsol-rg/griun-fromsol-rg/Griun_Fromsol-Rg.woff2")
     format("woff2");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Gunhamimalmunteuyeot";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/2607131613@gfcgunhamitalks/gfcgunhamitalks/GFCGunhamiTalks.woff2")
     format("woff2");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
+
+/* MonadABXY의 실제 webfont family 이름은 Mona10x12를 사용합니다. */
+@font-face {
+  font-family: "Mona10x12";
+  src: url("https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/Mona10x12.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona10x12";
+  src: url("https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/Mona10x12-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Ridibatang";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "BonmyeongjoSourceHanSerif";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
-/* 추가 눈누 웹폰트 // start */
+
+/* 기존 프로젝트에서 사용하는 추가 폰트 */
 @font-face {
   font-family: "DungGeunMo";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "GmarketSans";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
-/* 추가 눈누 웹폰트 // end */
-
 /* 1. 웹폰트 불러오기 (요청하신 폰트 + 추가 폰트) // end */
 
 
 
+/* 모든 페이지 공통 스타일 */
 * {
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0px;
-  padding: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
+  color: #333333;
+  font-family:
+    "Wanted Sans Variable",
+    "Wanted Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Noto Sans KR",
+    sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #333333;
-  overflow: hidden;
-  font-family:
-    "Wanted Sans", "wanted-sans-variable", "pretendard", "Pretendard Variable",
-    "noto-sans", "Noto Sans KR", sans-serif;
 }
 
-/* a blue color as a generic focus style */
-button:focus-visible {
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 인트로가 보이는 동안만 스크롤을 잠급니다. */
+body.is-loading {
+  overflow: hidden;
+}
+
+button:focus-visible,
+a:focus-visible {
   outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+  outline-offset: 3px;
 }
 
 a {
   text-decoration: none;
 }
+

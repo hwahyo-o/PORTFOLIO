@@ -4,56 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Yang Ye Hyun portfolio" />
+    <!-- SEO -->
+    <title>Ye Hyun Portfolio</title>
 
     <meta
+      name="description"
+      content="Yang Ye Hyun's visual design portfolio featuring UX/UI, graphic design, video, and creative projects."
+    />
+
+    <meta name="author" content="Yang Ye Hyun" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://hwahyo-o.github.io/PORTFOLIO/" />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Yang Ye Hyun | Visual Designer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="UX/UI, graphic design, video, and creative projects by visual designer Yang Ye Hyun."
+    />
+    <meta property="og:url" content="https://hwahyo-o.github.io/PORTFOLIO/" />
+    <meta property="og:site_name" content="Yang Ye Hyun Portfolio" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!--
+      GitHub Pages에서는 서버 응답 헤더를 직접 제어하기 어렵기 때문에
+      문서 수준에서 적용 가능한 CSP만 meta로 유지합니다.
+    -->
+    <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' https://cdn.jsdelivr.net;; style-src 'self' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://yehyun-portfolio-api.ajas03974.workers.dev; media-src 'self' https://yehyun-portfolio-api.ajas03974.workers.dev; connect-src 'self' https://yehyun-portfolio-api.ajas03974.workers.dev;"
+      content="default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://yehyun-portfolio-api.ajas03974.workers.dev; media-src 'self' https://yehyun-portfolio-api.ajas03974.workers.dev; connect-src 'self' https://yehyun-portfolio-api.ajas03974.workers.dev;"
     />
 
-    <title>YeHyun's Portfolio</title>
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" />
 
-    <link
-      rel="shortcut icon"
-      href="img/favicon-96x96.png"
-      type="image/x-icon"
-    />
-
+    <!-- CDN connection warm-up -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <!-- 외부 폰트 CDN 사전 연결 -->
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 
+    <!--
+      Wanted Sans: 공식 문서의 variable split 웹폰트.
+      CSS @import보다 HTML에서 먼저 발견하게 해 초기 폰트 준비 시간을 줄입니다.
+    -->
+    <link
+      rel="preload"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.3/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css"
+    />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="globals.css" />
-
+    <!-- Bootstrap: CSS 1회만 로드 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <!-- bootstrap default -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    />
-    <!-- bootstrap css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <!-- bootstrap icon -->
 
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <!-- Custom CSS: Bootstrap 뒤에서 로드하여 프로젝트 스타일을 우선 -->
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="is-loading">
     <!-- #로딩 스크린 영역 // start -->
     <div class="loading-wrap">
       <div id="loader">
         <div class="loader-content">
-          <div class="title-row">
+          <div class="title-row" aria-label="Portfolio 2026">
             <!-- portfolio에 하이라이트 컨테이너 감싸기 -->
             <span class="highlight-container">
               <span id="portfolio-word">PORTFOLIO</span>
@@ -62,7 +93,7 @@
           </div>
           <div class="subtitle-row">
             <p>Yang Ye Hyun</p>
-            <div></div>
+            <div aria-label="line"></div>
             <p>visual designer / portfolio</p>
           </div>
         </div>
@@ -77,12 +108,16 @@
         <!-- 로고 -->
         <button class="logo-btn" date-round="main" aria-label="YeHyun home">
           <a href="index.html">
-            <img src="img/yehyun_logo.png" alt="yehyun logo" />
+            <img
+              src="img/yehyun_logo.png"
+              alt="yehyun portfolio logo"
+              decoding="async"
+            />
           </a>
         </button>
 
         <!-- gnb menu -->
-        <nav aria-label="Portfolio categorys">
+        <nav aria-label="Portfolio categories">
           <button><a href="ux/ui.html">UX/UI</a></button>
           <button><a href="graphic.html">Graphic</a></button>
           <button><a href="video.html">Video</a></button>
@@ -98,7 +133,7 @@
             data-action="toggle-theme"
             aria-label="Toggle light/dark theme"
           >
-            <i class="bi bi-sun"></i>
+            <i class="bi bi-sun" aria-hidden="true"></i>
           </button>
           <button
             class="gnb-tool gnb-admin-tool"
@@ -106,7 +141,7 @@
             data-action="admin-login"
             aria-label="Admin login"
           >
-            <i class="bi bi-lock"></i>
+            <i class="bi bi-lock" aria-hidden="true"></i>
           </button>
 
           <!-- admin session tools -->
@@ -150,6 +185,7 @@
       </header>
       <!-- #header // end -->
 
+      <!-- 실제 포트폴리오 콘텐츠를 이 main 안에 정적 HTML로 배치하면 SEO에 가장 유리합니다. -->
       <!-- #main // start -->
       <div id="main"></div>
       <!-- #main // end -->
@@ -157,19 +193,27 @@
       <!-- #footer // start -->
       <div id="footer"></div>
       <!-- #footer // end -->
-      <!-- #main web site 영역 // end -->
     </div>
+    <!-- #main web site 영역 // end -->
 
     <!-- ============================= -->
-    <!-- index.js -->
-    <script src="./src/index.js" defer></script>
-
+    <!--
+      Bootstrap은 defer로 내려받고, 인트로 JS는 body 끝에서 즉시 실행합니다.
+      따라서 Bootstrap CDN 응답을 기다리지 않고 로딩 애니메이션을 시작할 수 있습니다.
+    -->
     <!-- #bootsrtap script // start -->
+    <!-- #bootsrtap script // end -->
     <script
+      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- #bootsrtap script // end -->
+
+
+    <!-- index.js -->
+    <script src="./src/index.js"></script>
+
+    
   </body>
 </html>
