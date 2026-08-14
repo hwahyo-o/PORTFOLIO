@@ -151,7 +151,7 @@ window.addEventListener(
     shuffleInterval =
       setInterval(
         changeRandomFonts,
-        800
+        600
       );
 
   }
